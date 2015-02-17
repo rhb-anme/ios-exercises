@@ -18,6 +18,10 @@
  @return @c YES if it does, or @c NO if it doesn't.
  */
 - (BOOL) switchesFromBlackAndWhiteToColor;
+
+
+//1.) I had orginally turned this part off so that it would not return a warning on the "testThatColorfullnessofFilm..." test.
+
 - (NSString *) mainCharacter;
 
 @end
