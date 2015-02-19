@@ -17,7 +17,7 @@
  
  @code
  NSString *fullSentence = [cheese favoriteCheeseStringWithCheese:@"cheddar"];
- // fullSentence is "My favorite cheese is cheddar."
+ fullSentence is "My favorite cheese is cheddar."
  @endcode
  
  @param cheeseName
