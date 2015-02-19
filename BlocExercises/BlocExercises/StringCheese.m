@@ -10,15 +10,18 @@
 
 @implementation StringCheese
 
-- (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
+- (NSString *) favoriteCheeseStringWithCheese:(NSString *)favoriteCheese {
     /* WORK HERE */
-    return cheeseName;
-    return nil;
+    return [NSString stringWithFormat:@"My favorite cheese is %@.", favoriteCheese];
+
 }
 
-- (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
+- (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseNameOnly {
     /* WORK HERE */
-    return nil;
+    // stringByReplacingOccurrencesOfString
+    // Remember from the phone conversation, you can only have 1 return
+    
+    return  nil;
 }
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
