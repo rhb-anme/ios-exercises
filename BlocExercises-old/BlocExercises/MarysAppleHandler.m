@@ -12,7 +12,7 @@
 
 - (NSString *) itemMaryCanPurchaseForDollars:(NSInteger)dollars {
     NSString *itemToReturn;
-    
+
     /* WORK HERE */
     if (dollars >= 1000000000) {
         itemToReturn = @"have The Big Apple";
@@ -31,7 +31,7 @@
 
 - (NSUInteger) dollarCostForAppleFlavoredVodka {
     /* WORK HERE */
-    
+
     NSUInteger cost = 24;
     
     if (self.getsDiscount) {

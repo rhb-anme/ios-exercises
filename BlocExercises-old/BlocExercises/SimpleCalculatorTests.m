@@ -27,12 +27,15 @@
 
 - (void) testThatIncrementsWork {
     NSInteger sourceNumber = 17;
-    NSInteger resultNumber = [self.calculator increaseNumberBy1:sourceNumber];
+    NSInteger resultNumber = [self.calculator increaseNumberBy1:(sourceNumber)];
     XCTAssertTrue(resultNumber == 18, @"17 + 1 = 18");
-
+    
+    
     sourceNumber = 972;
-    resultNumber = [self.calculator increaseNumberBy1:sourceNumber];
+    resultNumber = [self.calculator increaseNumberBy1:(sourceNumber)];
     XCTAssertTrue(resultNumber == 973, @"972 + 1 = 973");
+    
+    
 }
 
 - (void) testThatAdditionWorks {
@@ -41,19 +44,22 @@
     NSInteger resultNumber = [self.calculator addNumber:firstOperand toNumber:secondOperand];
     XCTAssertTrue(resultNumber == 20, @"17 + 3 = 20");
 
+    
     firstOperand = -2;
     secondOperand = 4;
     resultNumber = [self.calculator addNumber:firstOperand toNumber:secondOperand];
     XCTAssertTrue(resultNumber == 2, @"-2 + 4 = 2");
 }
 
+
+
 - (void) testThatDivisionWorks {
     NSInteger dividend = 15;
     NSInteger divisor = 5;
     
     NSInteger remainder = [self.calculator remainderOfNumber:dividend dividedByNumber:divisor];
-    
-    XCTAssertEqual(remainder, 0, @"15 is evenly divisible by 5, so the remainder should be 0.");
+
+    XCTAssertEqual(remainder, 3, @"15 is evenly divisible by 5, so the remainder should be 3.");
     
     NSInteger divisor2 = 4;
     NSInteger remainder2 = [self.calculator remainderOfNumber:dividend dividedByNumber:divisor2];

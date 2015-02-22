@@ -13,7 +13,7 @@
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)favoriteCheese {
     /* WORK HERE */
     return [NSString stringWithFormat:@"My favorite cheese is %@.", favoriteCheese];
-    
+
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseNameOnly {
@@ -22,10 +22,10 @@
     
     NSString *returnString = cheeseNameOnly;
     //The NSString *returnString = cheeseName Only translation: return the string with only the cheese name.
-    //    But why did it work? - You must figure it out before you can move to the next checkpoint
+//    But why did it work? - You must figure it out before you can move to the next checkpoint
     
     if ([[cheeseNameOnly lowercaseString] hasSuffix:@" cheese"]) {
-        
+      
         
         //if ([[cheeseNameOnly lowercaseString] hasSuffix:@" cheese"]) translation: if the cheeseNameOnly is lower case the word "cheese as a suffix, return only the cheese name (eg. Monterey Jack)
         
@@ -44,7 +44,10 @@
     
     return returnString;
     
-}
+        }
+
+        // Q: What is this question asking in StringCheeseTests.m?
+        // A:
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     if (cheeseCount == 1) {
