@@ -12,7 +12,37 @@
 
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
-    return @"";
+    
+    NSInteger lowNumber;
+    NSInteger highNumber;
+    
+    
+    if (number < otherNumber) {
+        lowNumber = number;
+        highNumber = otherNumber;
+    } else {
+        lowNumber = otherNumber;
+        highNumber = number;
+    }
+    
+    //if = ascending statement (testThatStringWorksAscending)
+    //else (oppsite statement) = descending  statememt (testThatStringWorksDescending)
+    //Final testThatStringWorksEqual cancels out because both numbers are equal
+    
+    NSMutableString *returnString = [NSMutableString string];
+    
+    for (NSInteger i = lowNumber; i <= highNumber; i++) {
+        [returnString appendFormat:@"%ld", (long)i];
+
+    }
+    
+ 
+    
+    return returnString;
+    
+    
+    
+        
 }
 
 @end
